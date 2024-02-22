@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; /* Start with the content invisible */
+    animation: fadeIn 2s ease-out forwards; /* Apply the fadeIn animation */
+}
+
+.logo {
+    width: 100px; /* Adjust based on the size of your logo */
+    margin-bottom: 20px;
+}
+
+/* Define the fadeIn keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
